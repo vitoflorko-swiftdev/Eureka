@@ -76,4 +76,17 @@ class DateTests: BaseEurekaTests {
 
     }
 
+    //VF Tests
+    func testDatePickerMode() {
+        let dateRow = DateRow()
+
+        XCTAssertFalse(dateRow.cell.datePickerMode() == .dateAndTime)
+        XCTAssertTrue(dateRow.cell.datePickerMode() == .date)
+
+        let dateAndTimeRow = DateTimeRow()
+
+        XCTAssertFalse(dateAndTimeRow.cell.datePickerMode() == .date)
+        XCTAssertTrue(dateAndTimeRow.cell.datePickerMode() == .dateAndTime)
+    }
+
 }

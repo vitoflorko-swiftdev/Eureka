@@ -92,11 +92,22 @@
 		B244E6541FE1C94F0026B944 /* AlertOptionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244E6531FE1C94F0026B944 /* AlertOptionsRow.swift */; };
 		B257FE2E1EC0F66900043911 /* RowsInsertionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257FE2D1EC0F66900043911 /* RowsInsertionTests.swift */; };
 		B2A401161EC0BA140042EDF0 /* SectionsInsertionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A401151EC0BA140042EDF0 /* SectionsInsertionTests.swift */; };
+		BFE4C0B721C68D6B00BA4295 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51729DEB1B9A4F5E004A00EB /* Eureka.framework */; };
+		BFE4C0BE21C6A87800BA4295 /* SegmentedCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4C0BD21C6A87800BA4295 /* SegmentedCellTests.swift */; };
+		BFE4C0C021C6ACC000BA4295 /* PickerInputRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4C0BF21C6ACC000BA4295 /* PickerInputRowTests.swift */; };
+		BFF734B121BAF364003F8DB5 /* TextAreaRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF734B021BAF364003F8DB5 /* TextAreaRowTests.swift */; };
 		FA56B6AF1DBAD38900407C94 /* RuleEqualsToRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56B6AE1DBAD38900407C94 /* RuleEqualsToRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		51729DF71B9A4F5E004A00EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51729DE21B9A4F5E004A00EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51729DEA1B9A4F5E004A00EB;
+			remoteInfo = Eureka;
+		};
+		BFE4C0B821C68D6B00BA4295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 51729DE21B9A4F5E004A00EB /* Project object */;
 			proxyType = 1;
@@ -194,6 +205,10 @@
 		B244E6531FE1C94F0026B944 /* AlertOptionsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertOptionsRow.swift; path = Common/AlertOptionsRow.swift; sourceTree = "<group>"; };
 		B257FE2D1EC0F66900043911 /* RowsInsertionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RowsInsertionTests.swift; path = Tests/RowsInsertionTests.swift; sourceTree = SOURCE_ROOT; };
 		B2A401151EC0BA140042EDF0 /* SectionsInsertionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectionsInsertionTests.swift; path = Tests/SectionsInsertionTests.swift; sourceTree = SOURCE_ROOT; };
+		BFE4C0B221C68D6A00BA4295 /* DateRowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateRowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE4C0BD21C6A87800BA4295 /* SegmentedCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedCellTests.swift; sourceTree = "<group>"; };
+		BFE4C0BF21C6ACC000BA4295 /* PickerInputRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerInputRowTests.swift; sourceTree = "<group>"; };
+		BFF734B021BAF364003F8DB5 /* TextAreaRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaRowTests.swift; sourceTree = "<group>"; };
 		FA56B6AE1DBAD38900407C94 /* RuleEqualsToRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RuleEqualsToRow.swift; path = Source/Validations/RuleEqualsToRow.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -210,6 +225,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				51729DF61B9A4F5E004A00EB /* Eureka.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE4C0AF21C68D6A00BA4295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE4C0B721C68D6B00BA4295 /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +366,7 @@
 			children = (
 				51729DEB1B9A4F5E004A00EB /* Eureka.framework */,
 				51729DF51B9A4F5E004A00EB /* EurekaTests.xctest */,
+				BFE4C0B221C68D6A00BA4295 /* DateRowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -364,11 +388,14 @@
 		51729DF91B9A4F5E004A00EB /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				BFE4C0BF21C6ACC000BA4295 /* PickerInputRowTests.swift */,
+				BFF734B021BAF364003F8DB5 /* TextAreaRowTests.swift */,
+				BFE4C0BD21C6A87800BA4295 /* SegmentedCellTests.swift */,
+				28B1D7741C7F90C900605EB3 /* DateTests.swift */,
 				287A142D1D8A07B700FFE6EB /* SelectableSectionTests.swift */,
 				28B1D7711C7F90C900605EB3 /* BaseEurekaTests.swift */,
 				28B1D7721C7F90C900605EB3 /* CallbacksTests.swift */,
 				28B1D7731C7F90C900605EB3 /* CollectionTests.swift */,
-				28B1D7741C7F90C900605EB3 /* DateTests.swift */,
 				28B1D7751C7F90C900605EB3 /* FormValuesTests.swift */,
 				28B1D7761C7F90C900605EB3 /* HelperMethodTests.swift */,
 				28B1D7771C7F90C900605EB3 /* HiddenRowsTests.swift */,
@@ -444,13 +471,31 @@
 			productReference = 51729DF51B9A4F5E004A00EB /* EurekaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BFE4C0B121C68D6A00BA4295 /* DateRowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE4C0BC21C68D6B00BA4295 /* Build configuration list for PBXNativeTarget "DateRowTests" */;
+			buildPhases = (
+				BFE4C0AE21C68D6A00BA4295 /* Sources */,
+				BFE4C0AF21C68D6A00BA4295 /* Frameworks */,
+				BFE4C0B021C68D6A00BA4295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFE4C0B921C68D6B00BA4295 /* PBXTargetDependency */,
+			);
+			name = DateRowTests;
+			productName = DateRowTests;
+			productReference = BFE4C0B221C68D6A00BA4295 /* DateRowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		51729DE21B9A4F5E004A00EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Xmartlabs;
 				TargetAttributes = {
@@ -462,6 +507,10 @@
 					51729DF41B9A4F5E004A00EB = {
 						CreatedOnToolsVersion = 7.0;
 						LastSwiftMigration = 1000;
+					};
+					BFE4C0B121C68D6A00BA4295 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -479,6 +528,7 @@
 			targets = (
 				51729DEA1B9A4F5E004A00EB /* Eureka */,
 				51729DF41B9A4F5E004A00EB /* EurekaTests */,
+				BFE4C0B121C68D6A00BA4295 /* DateRowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -494,6 +544,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		51729DF31B9A4F5E004A00EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE4C0B021C68D6A00BA4295 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -591,11 +648,21 @@
 				28B1D7901C7F911900605EB3 /* RowCallbackTests.swift in Sources */,
 				28B1D78E1C7F911900605EB3 /* OperatorsTest.swift in Sources */,
 				28B1D78D1C7F911900605EB3 /* HiddenRowsTests.swift in Sources */,
+				BFE4C0C021C6ACC000BA4295 /* PickerInputRowTests.swift in Sources */,
+				BFF734B121BAF364003F8DB5 /* TextAreaRowTests.swift in Sources */,
 				287A14331D8A07ED00FFE6EB /* SelectableSectionTests.swift in Sources */,
 				B257FE2E1EC0F66900043911 /* RowsInsertionTests.swift in Sources */,
 				28B1D78A1C7F911900605EB3 /* DateTests.swift in Sources */,
 				287A142B1D89DF1E00FFE6EB /* ValidationsTests.swift in Sources */,
+				BFE4C0BE21C6A87800BA4295 /* SegmentedCellTests.swift in Sources */,
 				28B1D78F1C7F911900605EB3 /* RowByTagTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE4C0AE21C68D6A00BA4295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +673,11 @@
 			isa = PBXTargetDependency;
 			target = 51729DEA1B9A4F5E004A00EB /* Eureka */;
 			targetProxy = 51729DF71B9A4F5E004A00EB /* PBXContainerItemProxy */;
+		};
+		BFE4C0B921C68D6B00BA4295 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51729DEA1B9A4F5E004A00EB /* Eureka */;
+			targetProxy = BFE4C0B821C68D6B00BA4295 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -792,6 +864,55 @@
 			};
 			name = Release;
 		};
+		BFE4C0BA21C68D6B00BA4295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DateRowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.DateRowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFE4C0BB21C68D6B00BA4295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DateRowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.DateRowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -818,6 +939,15 @@
 			buildConfigurations = (
 				51729E031B9A4F5E004A00EB /* Debug */,
 				51729E041B9A4F5E004A00EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE4C0BC21C68D6B00BA4295 /* Build configuration list for PBXNativeTarget "DateRowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE4C0BA21C68D6B00BA4295 /* Debug */,
+				BFE4C0BB21C68D6B00BA4295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

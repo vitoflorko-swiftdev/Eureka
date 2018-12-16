@@ -88,7 +88,7 @@ open class DateCell: Cell<Date>, CellType {
         detailTextLabel?.text = row.displayValueFor?(row.value)
     }
 
-    private func datePickerMode() -> UIDatePicker.Mode {
+    func datePickerMode() -> UIDatePicker.Mode {
         switch row {
         case is DateRow:
             return .date
